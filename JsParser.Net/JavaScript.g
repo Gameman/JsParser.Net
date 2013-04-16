@@ -185,8 +185,8 @@ tokens
 	POS ;
 }
 
-// Comment following line to enable error recovery:
-@rulecatch { }
+// Comment/uncomment following line to enable/disable error recovery:
+// @rulecatch { }
 
 @lexer::namespace { JsParser.Net }
 
