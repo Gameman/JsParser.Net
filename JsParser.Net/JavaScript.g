@@ -295,7 +295,7 @@ MultiLineComment
 	;
 
 SingleLineComment
-	: '//' ( ~( LineTerminator ) )* { $channel = Hidden; }
+	: ('//' | '<!--') ( ~( LineTerminator ) )* { $channel = Hidden; }
 	;
 
 // $>
